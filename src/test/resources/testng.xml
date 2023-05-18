@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Simple Google Page Test" thread-count="3" verbose="1" parallel="tests">
+	
+	
+	<test name="Google - Chrome test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name ="google.qa.com.tests.HomePageTest"/>
+		</classes>
+	</test>
+	
+	<test name="Google - Firefox test">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name ="google.qa.com.tests.HomePageTest"/>
+		</classes>
+	</test>
+	
+</suite>
